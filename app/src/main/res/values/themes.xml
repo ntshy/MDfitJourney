@@ -1,0 +1,25 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.fitJourney" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="android:colorBackground">@color/white</item>
+    </style>
+
+    <style name="SearchBarStyle" parent="Widget.Material3.SearchBar">
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="RoundedImage10" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">10dp</item>
+    </style>
+
+    <style name="DialogTextStyle" parent="@android:style/TextAppearance">
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <style name="Theme.fitJourney" parent="Base.Theme.fitJourney" />
+</resources>

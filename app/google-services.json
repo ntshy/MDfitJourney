@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "195711058510",
+    "project_id": "bangkit-ch2-ps307",
+    "storage_bucket": "bangkit-ch2-ps307.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:195711058510:android:b20ca2388ead0ec333b91f",
+        "android_client_info": {
+          "package_name": "id.my.fitJourney"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "195711058510-rkuunhd1is22cdfidghu5q9cicaisntv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "id.my.fitJourney",
+            "certificate_hash": "d91fee7cc4e0f2adf869629135587d3b84c65620"
+          }
+        },
+        {
+          "client_id": "195711058510-fa65j978a31nmk9bqil7esdolcthdej2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-rlSXWY_jqNdHmtw9uKusBIf59Jbiqfw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "195711058510-fa65j978a31nmk9bqil7esdolcthdej2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

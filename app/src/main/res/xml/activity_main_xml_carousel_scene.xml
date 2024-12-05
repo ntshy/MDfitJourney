@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:autoTransition="animateToEnd"
+        motion:duration="6000">
+        <OnSwipe
+            motion:autoCompleteMode="continuousVelocity"
+            motion:dragDirection="dragLeft" />
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@+id/indicator1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="3dp"
+            motion:layout_constraintEnd_toStartOf="@id/indicator2"
+            motion:layout_constraintTop_toBottomOf="@id/cvInsights1">
+            <CustomAttribute
+                motion:attributeName="crossfade"
+                motion:customFloatValue="1" />
+        </Constraint>
+        <Constraint
+            android:id="@+id/indicator2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="3dp"
+            motion:layout_constraintEnd_toStartOf="@id/indicator3"
+            motion:layout_constraintTop_toBottomOf="@id/cvInsights1">
+            <CustomAttribute
+                motion:attributeName="crossfade"
+                motion:customFloatValue="0" />
+        </Constraint>
+        <Constraint
+        android:id="@+id/indicator5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="3dp"
+        motion:layout_constraintStart_toEndOf="@id/indicator4"
+        motion:layout_constraintTop_toBottomOf="@id/cvInsights1">
+        <CustomAttribute
+            motion:attributeName="crossfade"
+            motion:customFloatValue="0" />
+    </Constraint>
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@+id/indicator1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="3dp"
+            motion:layout_constraintEnd_toStartOf="@id/indicator2"
+            motion:layout_constraintTop_toBottomOf="@id/cvInsights1">
+            <CustomAttribute
+                motion:attributeName="crossfade"
+                motion:customFloatValue="0" />
+        </Constraint>
+        <Constraint
+            android:id="@+id/indicator2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="3dp"
+            motion:layout_constraintEnd_toStartOf="@id/indicator3"
+            motion:layout_constraintTop_toBottomOf="@id/cvInsights1">
+            <CustomAttribute
+                motion:attributeName="crossfade"
+                motion:customFloatValue="1" />
+        </Constraint>
+        <Constraint
+            android:id="@+id/cvInsights2"
+            android:layout_width="match_parent"
+            android:layout_height="166dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="20dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent" />
+        <Constraint
+            android:id="@+id/cvInsights1"
+            android:layout_width="match_parent"
+            android:layout_height="166dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="20dp"
+            motion:layout_constraintEnd_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent" />
+        <Constraint
+            android:id="@+id/indicator3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@id/cvInsights1">
+            <CustomAttribute
+                motion:attributeName="crossfade"
+                motion:customFloatValue="0" />
+        </Constraint>
+    </ConstraintSet>
+    <ConstraintSet android:id="@+id/slide3">
+        <Constraint
+            android:id="@+id/indicator2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="3dp"
+            motion:layout_constraintEnd_toStartOf="@id/indicator3"
+            motion:layout_constraintTop_toBottomOf="@id/cvInsights1">
+            <CustomAttribute
+                motion:attributeName="crossfade"
+                motion:customFloatValue="0" />
+        </Constraint>
+        <Constraint
+            android:id="@+id/indicator3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@id/cvInsights1">
+            <CustomAttribute
+                motion:attributeName="crossfade"
+                motion:customFloatValue="1" />
+        </Constraint>
+        <Constraint
+            android:id="@+id/cvInsights2"
+            android:layout_width="match_parent"
+            android:layout_height="166dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="20dp"
+            motion:layout_constraintEnd_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent" />
+        <Constraint
+            android:id="@+id/cvInsights3"
+            android:layout_width="match_parent"
+            android:layout_height="166dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="20dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent" />
+        <Constraint
+            android:id="@+id/indicator4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="20dp"
+            motion:layout_constraintStart_toEndOf="@id/indicator3"
+            motion:layout_constraintTop_toBottomOf="@id/cvInsights1">
+            <CustomAttribute
+                motion:attributeName="crossfade"
+                motion:customFloatValue="0" />
+        </Constraint>
+    </ConstraintSet>
+
+    <Transition
+        motion:constraintSetEnd="@+id/slide3"
+        motion:constraintSetStart="@+id/end"
+        motion:autoTransition="animateToEnd"
+        motion:duration="6000">
+        <OnSwipe
+            motion:autoCompleteMode="continuousVelocity"
+            motion:dragDirection="dragLeft" />
+    </Transition>
+
+    <ConstraintSet android:id="@+id/slide4">
+        <Constraint
+            android:id="@+id/cvInsights3"
+            android:layout_width="match_parent"
+            android:layout_height="166dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="20dp"
+            motion:layout_constraintEnd_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent" />
+        <Constraint
+            android:id="@+id/cvInsights4"
+            android:layout_width="match_parent"
+            android:layout_height="166dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="20dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent" />
+        <Constraint
+            android:id="@+id/indicator3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@id/cvInsights1">
+            <CustomAttribute
+                motion:attributeName="crossfade"
+                motion:customFloatValue="0" />
+        </Constraint>
+        <Constraint
+            android:id="@+id/indicator4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="20dp"
+            motion:layout_constraintStart_toEndOf="@id/indicator3"
+            motion:layout_constraintTop_toBottomOf="@id/cvInsights1">
+            <CustomAttribute
+                motion:attributeName="crossfade"
+                motion:customFloatValue="1" />
+        </Constraint>
+        <Constraint
+            android:id="@+id/indicator5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="20dp"
+            motion:layout_constraintStart_toEndOf="@id/indicator4"
+            motion:layout_constraintTop_toBottomOf="@id/cvInsights1">
+            <CustomAttribute
+                motion:attributeName="crossfade"
+                motion:customFloatValue="0" />
+        </Constraint>
+    </ConstraintSet>
+    <ConstraintSet android:id="@+id/slide5">
+        <Constraint
+            android:id="@+id/cvInsights4"
+            android:layout_width="match_parent"
+            android:layout_height="166dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="20dp"
+            motion:layout_constraintEnd_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent" />
+        <Constraint
+            android:id="@+id/cvInsights5"
+            android:layout_width="match_parent"
+            android:layout_height="166dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="20dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent" />
+        <Constraint
+            android:id="@+id/indicator4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="20dp"
+            motion:layout_constraintStart_toEndOf="@id/indicator3"
+            motion:layout_constraintTop_toBottomOf="@id/cvInsights1">
+            <CustomAttribute
+                motion:attributeName="crossfade"
+                motion:customFloatValue="0" />
+        </Constraint>
+        <Constraint
+            android:id="@+id/indicator5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="20dp"
+            motion:layout_constraintStart_toEndOf="@id/indicator4"
+            motion:layout_constraintTop_toBottomOf="@id/cvInsights1">
+            <CustomAttribute
+                motion:attributeName="crossfade"
+                motion:customFloatValue="1" />
+        </Constraint>
+    </ConstraintSet>
+    <Transition
+        motion:constraintSetEnd="@+id/slide4"
+        motion:constraintSetStart="@+id/slide3"
+        motion:autoTransition="animateToEnd"
+        motion:duration="6000">
+        <OnSwipe
+            motion:autoCompleteMode="continuousVelocity"
+            motion:dragDirection="dragLeft" />
+    </Transition>
+    <Transition
+        motion:constraintSetEnd="@+id/slide5"
+        motion:constraintSetStart="@+id/slide4"
+        motion:autoTransition="animateToEnd"
+        motion:duration="6000">
+        <OnSwipe
+            motion:autoCompleteMode="continuousVelocity"
+            motion:dragDirection="dragLeft" />
+    </Transition>
+    <Transition
+        motion:constraintSetStart="@+id/slide5"
+        motion:constraintSetEnd="@+id/start"
+        motion:autoTransition="animateToEnd"
+        motion:duration="6000">
+        <OnSwipe
+            motion:autoCompleteMode="continuousVelocity"
+            motion:dragDirection="dragLeft" />
+    </Transition>
+</MotionScene>

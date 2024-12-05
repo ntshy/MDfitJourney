@@ -1,0 +1,128 @@
+<resources>
+    <string name="app_name">fitJourney</string>
+
+    <!--    register and login activity    -->
+    <string name="register">Register</string>
+    <string name="full_name">Full Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="switchToLogin">Already have an account?</string>
+    <string name="error_confirm_password">Confirm Password not equal to Password</string>
+
+    <string name="login">Login</string>
+    <string name="welcomeback">Welcome Back</string>
+    <string name="regist">Register</string>
+    <string name="hellothere">Hello There</string>
+    <string name="hint_name">Dummy</string>
+    <string name="password_error">Password must be at least 8 characters long.</string>
+    <string name="email_pattern">[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+</string>
+    <string name="email_error">Email address invalid.</string>
+    <string name="switchToRegister">Don’t have an account?</string>
+    <string name="hint_email">dummy@gmail.com</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="login_success">Login success</string>
+    <string name="empty_email">Email should not be empty</string>
+    <string name="empty_password">Password should not be empty</string>
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="logout_message">Are you sure you want to logout?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <!--    main activity    -->
+    <string name="home_title">Hello, %1$s</string>
+    <string name="home_subtitle">get healty!</string>
+    <string name="logout">Logout</string>
+
+    <!--    custom food activity    -->
+    <string name="breakfast">Breakfast</string>
+    <string name="lunch">Lunch</string>
+    <string name="dinner">Dinner</string>
+    <string name="snack">Snack</string>
+    <string name="calories">Calories</string>
+    <string name="fat">Fat</string>
+    <string name="saturated_fat">Saturated Fat</string>
+    <string name="cholesterol">Cholesterol</string>
+    <string name="sodium">Sodium</string>
+    <string name="carbohydrate">Carbohydrate</string>
+    <string name="fiber">Fiber</string>
+    <string name="sugar">Sugar</string>
+    <string name="protein">Protein</string>
+    <string name="calories_quantity">%1$s/2000</string>
+    <string name="fat_quantity">%1$s/100</string>
+    <string name="saturatedfat_quantity">%1$s/13</string>
+    <string name="cholesterol_quantity">%1$s/300</string>
+    <string name="sodium_quantity">%1$s/2300</string>
+    <string name="carbohydrate_quantity">%1$s/325</string>
+    <string name="fiber_quantity">%1$s/40</string>
+    <string name="sugar_quantity">%1$s/40</string>
+    <string name="protein_quantity">%1$s/200</string>
+    <string name="get_meals_suggestion">Get Meals Suggestion</string>
+
+    <!--    custom food result activity    -->
+    <string name="custom_food_result">Custom Food Result</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="steps">Steps</string>
+
+    <!--    check food nutrition activity    -->
+    <string name="check_food_nutrition">Check Food Nutrition</string>
+    <string name="food_check_title">What to Eat Today?</string>
+    <string name="Camera">Camera</string>
+    <string name="Gallery">Gallery</string>
+    <string name="get_result">Get Result</string>
+    <string name="permission_request_granted">Permission request granted</string>
+    <string name="rejected_permission">Permission request denied</string>
+
+    <!--    camera activity    -->
+    <string name="cannot_show_camera">Cannot show camera.</string>
+    <string name="camera_has_no_flash_unit">Camera has no flash unit</string>
+    <string name="cannot_take_a_photo">Cannot take a photo.</string>
+
+    <!--    check food result activity    -->
+    <string name="trivia">Trivia</string>
+    <string name="nutritions">Nutritions</string>
+    <string name="nutritional_values">Nutritional Values</string>
+
+    <!--    news view activity    -->
+    <string name="web_success_announce">The web has been successfully loaded</string>
+    <string name="nutrikita_insights_corner">fitJourney Insights Corner</string>
+
+    <!--    favorite foods activity    -->
+    <string name="favorite_foods">Favorite Foods</string>
+    <string name="empty_favorite">Oops.. You haven’t added the favorite food yet. Find your food by click the custom food button.</string>
+
+    <!--    profile activity    -->
+    <string name="profile">Profile</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="language">Language</string>
+    <string name="theme">Theme</string>
+
+    <!--    edit profile activity    -->
+    <string name="save">Save</string>
+
+    <!--    theme activity    -->
+    <string name="dark_mode">Dark Mode</string>
+    <string name="light_mode">Light Mode</string>
+    <string name="automatic">Automatic</string>
+
+    <!--    dummies    -->
+    <string name="telur">telur</string>
+    <string name="food_desc">This Fruit Soup may use jelly which is diced as well to add flavor and crowd to the Fruit Soup. I didn\'t have time to make the jelly, so I didn\'t use it</string>
+    <string name="pisang">Pisang</string>
+    <string name="vitamin_a">Vitamin A</string>
+    <string name="name_dummy">Dummy Ipsum</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="food_name">Food Name</string>
+    <string name="fav_food_description">Favorite Food Description</string>
+    <string name="oatmeals">Oatmeals</string>
+    <string name="response_data_is_empty">Response data is empty</string>
+    <string name="custom_food_icon">Custom Food Icon</string>
+    <string name="check_food_nutrition_icon">Check Food Nutrition Icon</string>
+    <string name="description">Description</string>
+
+</resources>

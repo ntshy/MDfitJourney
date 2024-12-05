@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">fitJourney</string>
+
+    <!-- register and login activity -->
+    <string name="register">Daftar</string>
+    <string name="full_name">Nama Lengkap</string>
+    <string name="email">Email</string>
+    <string name="password">Kata Sandi</string>
+    <string name="confirm_password">Konfirmasi Kata Sandi</string>
+    <string name="switchToLogin">Sudah punya akun?</string>
+    <string name="error_confirm_password">Konfirmasi Kata Sandi tidak sesuai dengan Kata Sandi</string>
+
+    <string name="login">Masuk</string>
+    <string name="hint_name">Dummy Setiawan</string>
+    <string name="password_error">Kata Sandi minimal harus terdiri dari 8 karakter.</string>
+    <string name="email_pattern">[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+</string>
+    <string name="email_error">Alamat email tidak valid.</string>
+    <string name="switchToRegister">Belum punya akun?</string>
+    <string name="hint_email">dummy@gmail.com</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="login_success">Login berhasil</string>
+    <string name="empty_email">Email tidak boleh kosong</string>
+    <string name="empty_password">Kata Sandi tidak boleh kosong</string>
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">Fragmen Pertama</string>
+    <string name="second_fragment_label">Fragmen Kedua</string>
+    <string name="next">Selanjutnya</string>
+    <string name="previous">Sebelumnya</string>
+    <string name="logout_message">Apakah Anda yakin ingin keluar?</string>
+    <string name="yes">Ya</string>
+    <string name="no">Tidak</string>
+
+    <!-- main activity -->
+    <string name="home_title">Halo, %1$s</string>
+    <string name="home_subtitle">Makan sehat, agar bayi sehat</string>
+    <string name="logout">Keluar</string>
+
+    <!-- custom food activity -->
+    <string name="custom_food">Kustom Makanan</string>
+    <string name="calories">Kalori</string>
+    <string name="fat">Lemak</string>
+    <string name="saturated_fat">Lemak Jenuh</string>
+    <string name="cholesterol">Kolesterol</string>
+    <string name="sodium">Natrium</string>
+    <string name="carbohydrate">Karbohidrat</string>
+    <string name="fiber">Serat</string>
+    <string name="sugar">Gula</string>
+    <string name="protein">Protein</string>
+    <string name="calories_quantity">%1$s/2000</string>
+    <string name="fat_quantity">%1$s/100</string>
+    <string name="saturatedfat_quantity">%1$s/13</string>
+    <string name="cholesterol_quantity">%1$s/300</string>
+    <string name="sodium_quantity">%1$s/2300</string>
+    <string name="carbohydrate_quantity">%1$s/325</string>
+    <string name="fiber_quantity">%1$s/40</string>
+    <string name="sugar_quantity">%1$s/40</string>
+    <string name="protein_quantity">%1$s/200</string>
+    <string name="get_meals_suggestion">Dapatkan Saran Makanan</string>
+
+    <!-- custom food result activity -->
+    <string name="custom_food_result">Hasil Makanan Kustom</string>
+    <string name="ingredients">Bahan</string>
+    <string name="steps">Langkah-langkah</string>
+
+    <!-- check food nutrition activity -->
+    <string name="check_food_nutrition">Periksa Nutrisi Makanan</string>
+    <string name="food_check_title">Makan Apa Hari Ini?</string>
+    <string name="Camera">Kamera</string>
+    <string name="Gallery">Galeri</string>
+    <string name="get_result">Selanjutnya</string>
+    <string name="permission_request_granted">Permintaan izin diterima</string>
+    <string name="rejected_permission">Permintaan izin ditolak</string>
+
+    <!-- camera activity -->
+    <string name="cannot_show_camera">Tidak dapat menampilkan kamera.</string>
+    <string name="camera_has_no_flash_unit">Kamera tidak memiliki flashlight</string>
+    <string name="cannot_take_a_photo">Tidak dapat mengambil foto.</string>
+
+    <!-- check food result activity -->
+    <string name="trivia">Trivia</string>
+    <string name="nutritions">Nutrisi</string>
+    <string name="nutritional_values">Nilai Nutrisi</string>
+
+    <!-- news view activity -->
+    <string name="web_success_announce">Web berhasil dimuat</string>
+    <string name="nutrikita_insights_corner">Sudut Wawasan fitJourney</string>
+
+    <!-- favorite foods activity -->
+    <string name="favorite_foods">Makanan Favorit</string>
+    <string name="empty_favorite">Ups.. Anda belum menambahkan makanan favorit. Temukan makanan Anda dengan mengeklik tombol makanan kustom.</string>
+
+    <!--    profile activity    -->
+    <string name="profile">Profil</string>
+    <string name="edit_profile">Edit Profil</string>
+    <string name="language">Bahasa</string>
+    <string name="theme">Tema</string>
+
+    <!--    edit profile activity    -->
+    <string name="save">Simpan</string>
+
+    <!--    theme activity    -->
+    <string name="dark_mode">Mode Gelap</string>
+    <string name="light_mode">Mode Terang</string>
+    <string name="automatic">Otomatis</string>
+
+    <!-- dummies -->
+    <string name="telur">telur</string>
+    <string name="food_desc">Sup Buah ini mungkin menggunakan agar-agar yang dipotong-potong juga untuk menambah rasa dan keramaian pada Sup Buah. Saya tidak punya waktu untuk membuat agar-agar, jadi saya tidak menggunakannya</string>
+    <string name="pisang">Pisang</string>
+    <string name="vitamin_a">Vitamin A</string>
+    <string name="name_dummy">Dummy Ipsum</string>
+    <string name="hello_blank_fragment">Halo fragmen kosong</string>
+    <string name="food_name">Nama Makanan</string>
+    <string name="fav_food_description">Deskripsi Makanan Favorit</string>
+    <string name="oatmeals">Oatmeal</string>
+    <string name="response_data_is_empty">Data respons kosong</string>
+    <string name="custom_food_icon">Ikon Makanan Kustom</string>
+    <string name="check_food_nutrition_icon">Ikon Periksa Nutrisi Makanan</string>
+    <string name="description">Deskripsi</string>
+</resources>

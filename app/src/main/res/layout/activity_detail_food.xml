@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_details"
+    tools:context=".ui.detailfood.DetailFoodActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnArrowBack"
+            style="?attr/materialIconButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:background="@color/transparent"
+            android:padding="0dp"
+            app:icon="@drawable/baseline_arrow_back"
+            app:iconTint="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvFoodName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/poppins_semibold"
+            android:maxLines="1"
+            android:paddingHorizontal="60dp"
+            android:text="@string/pisang"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@id/btnFavorite"
+            app:layout_constraintStart_toStartOf="@id/btnArrowBack"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:id="@+id/btnFavorite"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="42dp"
+            android:src="@drawable/baseline_favorite_border_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="236dp"
+            android:background="@drawable/description_food_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivFoodResult"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="130dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/backgrounds/scenic" />
+
+        <TextView
+            android:id="@+id/tvNutritionalValueTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/nutritional_values"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivFoodResult" />
+
+        <TextView
+            android:id="@+id/tvCalories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/calories"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvNutritionalValueTitle" />
+
+        <ProgressBar
+            android:id="@+id/pbCalories"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:max="2000"
+            android:progressBackgroundTint="@color/progress_background_color"
+            app:layout_constraintTop_toBottomOf="@id/tvCalories" />
+
+        <TextView
+            android:id="@+id/quantityCalories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/poppins_light"
+            android:text="@string/calories_quantity"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pbCalories" />
+
+        <TextView
+            android:id="@+id/tvFat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/fat"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/quantityCalories" />
+
+        <ProgressBar
+            android:id="@+id/pbFat"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:max="100"
+            android:progressBackgroundTint="@color/progress_background_color"
+            app:layout_constraintTop_toBottomOf="@id/tvFat" />
+
+        <TextView
+            android:id="@+id/quantityFat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/poppins_light"
+            android:text="@string/fat_quantity"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pbFat" />
+
+        <TextView
+            android:id="@+id/tvSaturatedFat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/saturated_fat"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/quantityFat" />
+
+        <ProgressBar
+            android:id="@+id/pbSaturatedFat"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:max="13"
+            android:progressBackgroundTint="@color/progress_background_color"
+            app:layout_constraintTop_toBottomOf="@id/tvSaturatedFat" />
+
+        <TextView
+            android:id="@+id/quantitySaturatedFat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/poppins_light"
+            android:text="@string/saturatedfat_quantity"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pbSaturatedFat" />
+
+        <TextView
+            android:id="@+id/tvCholesterol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/cholesterol"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/quantitySaturatedFat" />
+
+        <ProgressBar
+            android:id="@+id/pbCholesterol"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:max="300"
+            android:progressBackgroundTint="@color/progress_background_color"
+            app:layout_constraintTop_toBottomOf="@id/tvCholesterol" />
+
+        <TextView
+            android:id="@+id/quantityCholesterol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/poppins_light"
+            android:text="@string/cholesterol_quantity"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pbCholesterol" />
+
+        <TextView
+            android:id="@+id/tvSodium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/sodium"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/quantityCholesterol" />
+
+        <ProgressBar
+            android:id="@+id/pbSodium"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:max="2300"
+            android:progressBackgroundTint="@color/progress_background_color"
+            app:layout_constraintTop_toBottomOf="@id/tvSodium" />
+
+        <TextView
+            android:id="@+id/quantitySodium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/poppins_light"
+            android:text="@string/sodium_quantity"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pbSodium" />
+
+        <TextView
+            android:id="@+id/tvCarbohydrate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/carbohydrate"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/quantitySodium" />
+
+        <ProgressBar
+            android:id="@+id/pbCarbohydrate"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:max="325"
+            android:progressBackgroundTint="@color/progress_background_color"
+            app:layout_constraintTop_toBottomOf="@id/tvCarbohydrate" />
+
+        <TextView
+            android:id="@+id/quantityCarbohydrate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/poppins_light"
+            android:text="@string/carbohydrate_quantity"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pbCarbohydrate" />
+
+        <TextView
+            android:id="@+id/tvFiber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/fiber"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/quantityCarbohydrate" />
+
+        <ProgressBar
+            android:id="@+id/pbFiber"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:max="40"
+            android:progressBackgroundTint="@color/progress_background_color"
+            app:layout_constraintTop_toBottomOf="@id/tvFiber" />
+
+        <TextView
+            android:id="@+id/quantityFiber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/poppins_light"
+            android:text="@string/fiber_quantity"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pbFiber" />
+
+        <TextView
+            android:id="@+id/tvSugar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/sugar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/quantityFiber" />
+
+        <ProgressBar
+            android:id="@+id/pbSugar"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:max="40"
+            android:progressBackgroundTint="@color/progress_background_color"
+            app:layout_constraintTop_toBottomOf="@id/tvSugar" />
+
+        <TextView
+            android:id="@+id/quantitySugar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/poppins_light"
+            android:text="@string/sugar_quantity"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pbSugar" />
+
+        <TextView
+            android:id="@+id/tvProtein"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/protein"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/quantitySugar" />
+
+        <ProgressBar
+            android:id="@+id/pbProtein"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:max="200"
+            android:progressBackgroundTint="@color/progress_background_color"
+            app:layout_constraintTop_toBottomOf="@id/tvProtein" />
+
+        <TextView
+            android:id="@+id/quantityProtein"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/poppins_light"
+            android:text="@string/protein_quantity"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pbProtein" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

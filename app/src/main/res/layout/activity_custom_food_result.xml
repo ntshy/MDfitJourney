@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.customfoodresult.CustomFoodResultActivity">
+
+    <!-- Title for Custom Food Result -->
+    <TextView
+        android:id="@+id/tvCustomFoodResultTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/custom_food_result"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Back Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnArrowBack"
+        style="?attr/materialIconButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:background="@color/transparent"
+        android:padding="0dp"
+        app:icon="@drawable/baseline_arrow_back"
+        app:iconTint="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- SearchView for Searching Custom Food -->
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchViewCustomFood"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:queryHint="Search food..."
+    android:iconifiedByDefault="false"
+    app:layout_constraintTop_toBottomOf="@id/tvCustomFoodResultTitle"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginHorizontal="20dp"
+    android:layout_marginTop="16dp"
+    android:layout_gravity="end"
+    />
+
+    <!-- RecyclerView to display food results -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvFoodResultItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/searchViewCustomFood" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
